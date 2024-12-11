@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Suggestions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: linear-gradient(135deg, #f3f4f6, #ffffff);
+            margin: 0;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .category-section {
+            margin-bottom: 40px;
+        }
+        .category-title {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 20px;
+            text-align: left;
+            border-left: 5px solid #4CAF50;
+            padding-left: 10px;
+        }
+        .suggestions-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .suggestion-item {
+            display: inline-block;
+            width: 220px;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 12px;
+            background: linear-gradient(145deg, #ffffff, #e6e6e6);
+            box-shadow: 5px 5px 15px #d1d1d1, -5px -5px 15px #ffffff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .suggestion-item:hover {
+            transform: scale(1.1) rotateZ(3deg);
+            box-shadow: 8px 8px 20px #c1c1c1, -8px -8px 20px #ffffff;
+        }
+        .suggestion-item img {
+            width: 100%;
+            height: 150px;
+            border-radius: 8px;
+        }
+        .suggestion-item h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333;
+        }
+        .add-to-cart-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            width: 100%;
+        }
+        .add-to-cart-btn:hover {
+            background-color: #45a049;
+        }
+        .cart-btn-container {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gift Suggestions</h1>
+
+    <div class="category-section">
+        <div class="category-title">Fshion and Acessories</div>
+        <div class="suggestions-container">
+            <div class="suggestion-item">
+                <img src="leather.jpg" alt="Leather Belt">
+                <h3>Leather Belt</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Leather Belt')">Add to Cart</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="cuff.jpg" alt="Cufflinksf">
+                <h3>Cufflinksf</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Cufflinksf')">Add to Cart</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="sunglasss.avif" alt="Designer Sunglasses">
+                <h3>Designer Sunglasses</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Designer Sunglasses')">Add to Cart</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="cloth2.jpg" alt="comforfable Clothing">
+                <h3>comforfable Clothing</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('comforfable Clothing')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category 1: Health and Wellness -->
+    <div class="category-section">
+        <div class="category-title">Health and Wellness</div>
+        <div class="suggestions-container">
+            <div class="suggestion-item">
+                <img src="yoga-mat.webp" alt="Yoga Mat">
+                <h3>Yoga Mat</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Yoga Mat')">Add to Cart</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="spa-kit.webp" alt="Home Gym Equipment">
+                <h3>Home Gym Equipment</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Home Gym Equipment')">Add to Cart</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="fitness.jpg" alt="Fitness tracker">
+                <h3>Fitness tracker</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('fitness tracker')">Add to Cart</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="massage.jpg" alt="Massage chain pad">
+                <h3>massage chain pad</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('massage chain pad')">Add to Cart</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Category 2: Tech and Gadgets -->
+    <div class="category-section">
+        <div class="category-title">Tech and Gadgets</div>
+        <div class="suggestions-container">
+            <div class="suggestion-item">
+                <img src="smartwatch.webp" alt="Smartwatch">
+                <h3>Smartwatch</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Smartwatch')">Add to Cart</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="earbuds.jpg" alt="Wireless Earbuds">
+                <h3>Wireless Earbuds</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Wireless Earbuds')">Add to Cart</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="tab.webp" alt="Tablet">
+                <h3>Tablet</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Tablet')">Add to Cart</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="powerb.jpg" alt="Portable Power Bank">
+                <h3>Portable Power Bank</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('E-Portable Power Bank')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category 3: Experiential Gifts -->
+    <div class="category-section">
+        <div class="category-title">Experiential Gifts</div>
+        <div class="suggestions-container">
+            <div class="suggestion-item">
+                <img src="fish.jpg" alt="Fishing Gear">
+                <h3>Fishing Gear</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Fishing Gear')">Add to Cart</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="adventure.jpg" alt="Adventure Trip">
+                <h3>Adventure Trip</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Adventure Trip')">Add to Cart</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="theatre.avif" alt="Theater Tickets">
+                <h3>Theater Tickets</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Theater Tickets')">Add to Cart</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="subs.webp" alt="subscription box">
+                <h3>subscription box</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('subscription box')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category 4: Hobbies and Interests -->
+    <div class="category-section">
+        <div class="category-title">Hobbies and Interests</div>
+        <div class="suggestions-container">
+            <div class="suggestion-item">
+                <img src="paint.webp" alt="Painting Kit">
+                <h3>Painting Kit</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Painting Kit')">Add to Cart</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="gardn.jpg" alt="Gardening Tools">
+                <h3>Gardening Tools</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Gardening Tools')">Add to Cart</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="music.jpg" alt="Musical Instrument">
+                <h3>Musical Instrument</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Musical Instrument')">Add to Cart</button>
+            </div>
+            <div class="suggestion-item">
+                <img src="tool.jpg" alt="Tool Set">
+                <h3>Tool Set</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Tool Set')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addToCart(item) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(item);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(item + ' added to cart!');
+        }
+        function goToCart() {
+            window.location.href = 'cart.html'; // Navigate to cart page
+        }
+   
+    </script>
+</body>
+</html>
