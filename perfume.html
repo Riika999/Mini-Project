@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .product-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .product-image-container {
+            width: 45%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-image:hover {
+            transform: scale(1.05);
+        }
+
+        .product-details {
+            width: 50%;
+            text-align: left;
+        }
+
+        .product-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .product-price {
+            font-size: 26px;
+            color: #b12704;
+            margin-bottom: 15px;
+        }
+
+        .product-offers {
+            font-size: 14px;
+            color: #565959;
+            margin-bottom: 20px;
+        }
+
+        .product-description {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .product-highlights {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .product-buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product-button {
+            padding: 15px 25px;
+            background-color: #f0c14b;
+            border: 1px solid #a88734;
+            border-radius: 5px;
+            color: #111;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 48%;
+        }
+
+        .product-button:hover {
+            background-color: #e7b700;
+        }
+
+        .location-section {
+            margin-top: 20px;
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .location-section input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 60%;
+            margin-right: 10px;
+        }
+
+        .location-section button {
+            padding: 10px 20px;
+            background-color: #38b14d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .location-section button:hover {
+            background-color: #2d8b38;
+        }
+
+        .delivery-status {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .delivery-status.available {
+            color: #4caf50;
+        }
+
+        .delivery-status.unavailable {
+            color: #f44336;
+        }
+
+        .review-section {
+            margin-top: 20px;
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .review-section h3 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .review {
+            margin-bottom: 10px;
+        }
+
+        .review .reviewer {
+            font-weight: bold;
+        }
+
+        .review .review-text {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <!-- Product Image Section -->
+        <div class="product-image-container">
+            <img class="product-image" src="https://ik.imagekit.io/anscommerce/image/tr:e-sharpen-01,h-1500,w-1500,cm-pad_resize/catalog/engage/product/PENPS0182/PENPS0182.jpg" alt="Engage Gift Set Luxury Travel Perfume">
+        </div>
+
+        <!-- Product Details Section -->
+        <div class="product-details">
+            <h2 class="product-title">Engage Gift Set Luxury Travel Perfume, Long Lasting Fragrance, Wedding Hamper (25mlx4) Eau de Parfum - 100 ml (For Women)</h2>
+            <p class="product-price">₹404</p>
+
+            <p class="product-offers">
+                * Special Price: Get extra 55% off (price inclusive of cashback/coupon)<br>
+                * Combo Offer: Buy 3 items save 3%; Buy 4 or more save 5%<br>
+                * Bank Offer: 5% Unlimited Cashback on Flipkart Axis Bank Credit Card T&C
+            </p>
+
+            <div class="product-description">
+                <h3>Product Details</h3>
+                <p>
+                    Engage Yang is a perfect blend of fruity and floral notes, making it perfect for any woman who wants to reveal her sophisticated femininity. Top notes of blackcurrant, mandarin, and apple give it a juicy and lively opening, while the middle notes of jasmine, rose, and orange flowers add a romantic and floral depth. As it dries down, the bottom notes of musk and sandalwood give it a warm and alluring finish.
+                </p>
+            </div>
+
+            <div class="product-highlights">
+                <h3>Highlights</h3>
+                <ul>
+                    <li>Quantity: 100 ml</li>
+                    <li>Ideal For: Women</li>
+                    <li>Fragrance Classification: Eau de Parfum</li>
+                    <li>Fragrance Family: Fruity</li>
+                </ul>
+            </div>
+
+            <!-- Add to Cart and Buy Now Buttons -->
+            <div class="product-buttons">
+                <button class="product-button">ADD TO CART</button>
+                <button class="product-button">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Location Section for Delivery Check -->
+    <div class="location-section">
+        <h3>Check Delivery Availability</h3>
+        <input type="text" placeholder="Enter your zip code" id="location-input">
+        <button onclick="checkDelivery()">Check Availability</button>
+        <p class="delivery-status" id="delivery-status"></p>
+    </div>
+
+    <script>
+        function checkDelivery() {
+            const zipCode = document.getElementById('location-input').value;
+            const deliveryStatus = document.getElementById('delivery-status');
+
+            if (zipCode) {
+                // Here, you can make a real API call to check the delivery status
+                // For this example, we're just simulating the check with a simple condition
+                if (zipCode.startsWith("10")) {  // Example: Delivery available for zip codes starting with "10"
+                    deliveryStatus.textContent = "Delivery is available in your area!";
+                    deliveryStatus.classList.remove('unavailable');
+                    deliveryStatus.classList.add('available');
+                } else {
+                    deliveryStatus.textContent = "Sorry, delivery is not available in your area.";
+                    deliveryStatus.classList.remove('available');
+                    deliveryStatus.classList.add('unavailable');
+                }
+            } else {
+                deliveryStatus.textContent = "Please enter a valid zip code.";
+                deliveryStatus.classList.remove('available');
+                deliveryStatus.classList.add('unavailable');
+            }
+        }
+    </script>
+</body>
+</html>
