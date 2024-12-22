@@ -1,0 +1,6 @@
+Flask
+Flask-SQLAlchemy
+Flask-RESTful
+Flask-Cors
+marshmallow
+psycopg2-binary  # or your preferred database driver
